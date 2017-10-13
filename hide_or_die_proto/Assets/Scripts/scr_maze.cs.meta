@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8351c88942d29a447ab3abe44577869a
+timeCreated: 1506316882
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - pre_node: {fileID: 114002606883560950, guid: 7ca9e1a441af1d2448fe8883549713cc,
+      type: 2}
+  - pre_passage: {fileID: 114044916428692598, guid: 5a8ee109d8891c243957dd15d2d9511b,
+      type: 2}
+  - pre_wall: {fileID: 114354459037267880, guid: dad93d96639a67f49b9a0126465da7b8,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

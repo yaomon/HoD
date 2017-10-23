@@ -40,6 +40,7 @@ ModelImporter:
     2300008: pCube6
     2300010: pCube7
     2300012: pCube8
+    2300014: //RootNode
     3300000: pCube1
     3300002: pCube2
     3300004: pCube3
@@ -47,6 +48,7 @@ ModelImporter:
     3300008: pCube6
     3300010: pCube7
     3300012: pCube8
+    3300014: //RootNode
     4300000: pCube1
     4300002: pCube2
     4300004: pCube3

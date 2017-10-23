@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 114022686059141674}
   - component: {fileID: 54767589387814794}
   - component: {fileID: 82107566600787578}
+  - component: {fileID: 114206611723909928}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Untagged
@@ -91,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1022944870100206}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 4595994834535004}
@@ -119,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1492595987137030}
   m_LocalRotation: {x: 0.5019153, y: -0.4993651, z: -0.5264946, w: -0.47065803}
-  m_LocalPosition: {x: -0.0002, y: 0.00529, z: 0.0003}
+  m_LocalPosition: {x: -0.0002, y: 0.0053, z: 0.0003}
   m_LocalScale: {x: 0.050859414, y: 0.0499582, z: 0.014233609}
   m_Children: []
   m_Father: {fileID: 4595994834535004}
@@ -132,8 +133,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1463295107709426}
   m_LocalRotation: {x: 0.6316147, y: -0.31790397, z: -0.31790397, w: 0.6316147}
-  m_LocalPosition: {x: -0.142, y: -0.2101315, z: 0.08100002}
-  m_LocalScale: {x: 9, y: 19, z: 9}
+  m_LocalPosition: {x: -0.161, y: -0.21021, z: 0.105}
+  m_LocalScale: {x: 4.3804746, y: 9.247662, z: 4.380471}
   m_Children:
   - {fileID: 4560170208660466}
   m_Father: {fileID: 4000840161795294}
@@ -429,7 +430,7 @@ Light:
   m_Color: {r: 0.9485294, g: 0.9109153, b: 0.78811634, a: 1}
   m_Intensity: 1
   m_Range: 15
-  m_SpotAngle: 70
+  m_SpotAngle: 100
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -440,7 +441,7 @@ Light:
     m_NormalBias: 0.08
     m_NearPlane: 0.15
   m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
+  m_DrawHalo: 1
   m_Flare: {fileID: 0}
   m_RenderMode: 0
   m_CullingMask:
@@ -567,8 +568,30 @@ MonoBehaviour:
   m_FootstepSounds:
   - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
+  - {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
+  - {fileID: 8300000, guid: 0b925a342a112214197b6927a8d71d15, type: 3}
+  - {fileID: 8300000, guid: 48a0cc116ed557649bca5e578bc5f4d7, type: 3}
+  - {fileID: 8300000, guid: 1d5a41572f4d0d549ac9c711132ea3b2, type: 3}
+  - {fileID: 8300000, guid: 2a9114254efa8c44bbb4364838179623, type: 3}
+  - {fileID: 8300000, guid: 442f252e8a182a14481ad2fff921fb94, type: 3}
+  - {fileID: 8300000, guid: bff965613f5810643bbc712eeaa720c6, type: 3}
+  - {fileID: 8300000, guid: fb7611a8845d5f043a5c997ec80086be, type: 3}
   m_JumpSound: {fileID: 0}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  curr_node: {fileID: 0}
+--- !u!114 &114206611723909928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1833433133558980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7f03dd995224f84d8c3daea92f653cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curr_node: {fileID: 0}
 --- !u!114 &114310490989231890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -581,6 +604,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound_switch: {fileID: 8300000, guid: 84f122b826ebb43468d15c9ca171f725, type: 3}
+  sound_off: {fileID: 8300000, guid: 0e9555bfab4b8664a831c6143ba685be, type: 3}
+  dying_noise:
+  - {fileID: 8300000, guid: 336790cbb19daf14a94883a7bcffdafb, type: 3}
+  - {fileID: 8300000, guid: d16c0c4e78435ee438b7ed06a9dc02bd, type: 3}
+  - {fileID: 8300000, guid: b5a837edf68f5814fa7ab100ee6d6f10, type: 3}
+  power: 0.0002
 --- !u!124 &124686318886762654
 Behaviour:
   m_ObjectHideFlags: 1
@@ -598,8 +627,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.2
-  m_Radius: 0.5
+  m_Height: 0.1
+  m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08

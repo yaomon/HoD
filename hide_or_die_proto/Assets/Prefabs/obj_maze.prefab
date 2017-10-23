@@ -57,4 +57,27 @@ MonoBehaviour:
   pre_node: {fileID: 114002606883560950, guid: 7ca9e1a441af1d2448fe8883549713cc, type: 2}
   pre_passage: {fileID: 114044916428692598, guid: 5a8ee109d8891c243957dd15d2d9511b,
     type: 2}
-  pre_wall: {fileID: 114354459037267880, guid: dad93d96639a67f49b9a0126465da7b8, type: 2}
+  pre_wall:
+  - {fileID: 114354459037267880, guid: dad93d96639a67f49b9a0126465da7b8, type: 2}
+  - {fileID: 114354459037267880, guid: dad93d96639a67f49b9a0126465da7b8, type: 2}
+  - {fileID: 114557485868807680, guid: 9a77cb0673a11a54b8f4ef2c621e9bf6, type: 2}
+  - {fileID: 114354459037267880, guid: dad93d96639a67f49b9a0126465da7b8, type: 2}
+  - {fileID: 114557485868807680, guid: 9a77cb0673a11a54b8f4ef2c621e9bf6, type: 2}
+  room_sets:
+  - floorMaterial: {fileID: 2100000, guid: f24ba2fb5f3339c4abd2786e8b412c6d, type: 2}
+    wallMaterial: {fileID: 2100000, guid: aeb27e2d259519248b6b2a497a23cea6, type: 2}
+    roofMaterial: {fileID: 2100000, guid: f24ba2fb5f3339c4abd2786e8b412c6d, type: 2}
+  - floorMaterial: {fileID: 2100000, guid: f24ba2fb5f3339c4abd2786e8b412c6d, type: 2}
+    wallMaterial: {fileID: 2100000, guid: f24ba2fb5f3339c4abd2786e8b412c6d, type: 2}
+    roofMaterial: {fileID: 2100000, guid: 8fcd6458c65b7d9458a38c2d29330b8b, type: 2}
+  - floorMaterial: {fileID: 2100000, guid: f24ba2fb5f3339c4abd2786e8b412c6d, type: 2}
+    wallMaterial: {fileID: 2100000, guid: 7e41e76a36d875147bccc63c6ce51f57, type: 2}
+    roofMaterial: {fileID: 2100000, guid: aeb27e2d259519248b6b2a497a23cea6, type: 2}
+  - floorMaterial: {fileID: 2100000, guid: aeb27e2d259519248b6b2a497a23cea6, type: 2}
+    wallMaterial: {fileID: 2100000, guid: 7e41e76a36d875147bccc63c6ce51f57, type: 2}
+    roofMaterial: {fileID: 2100000, guid: 8fcd6458c65b7d9458a38c2d29330b8b, type: 2}
+  pre_door: {fileID: 114360851575152466, guid: 410f7274170d9324698e51f4da2da95b, type: 2}
+  pre_broke: {fileID: 114792804716042638, guid: 7ee9b0b3ee624a748a6ff5f4c922ce3b,
+    type: 2}
+  pre_roof: {fileID: 114604738207381696, guid: 9387a481436821243be8dbee7839e599, type: 2}
+  db_prob: 0.259

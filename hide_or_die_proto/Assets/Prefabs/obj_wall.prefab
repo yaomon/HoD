@@ -137,3 +137,4 @@ MonoBehaviour:
   cell: {fileID: 0}
   other: {fileID: 0}
   direction: 0
+  wall: {fileID: 4339020980886768}

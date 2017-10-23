@@ -4,6 +4,35 @@ public class scr_node : MonoBehaviour {
 	public IntVector2 coordinates;
 	private scr_edge[] edges = new scr_edge[Directions.count];
 	private int initializedEdgecount;
+	public scr_room room;
+	public scr_roof roof;
+
+	public void Initialize (scr_room room) {
+		room.Add (this);
+		transform.GetChild (0).GetComponent<Renderer> ().material = room.settings.floorMaterial;
+	}
+
+	public void OnPlayerEnter () {
+		for (int i = 0; i < edges.Length; i++) {
+			if (edges [i] != null) {
+				edges [i].OnPlayerEnter ();
+			}
+			if (edges [i].other != null) {
+				edges [i].other.GetEdge (edges [i].direction.GetOpposite ()).OnPlayerEnter ();
+			}
+		}
+	}
+
+	public void OnPlayerExit () {
+		for (int i = 0; i < edges.Length; i++) {
+			if (edges [i] != null) {
+				edges [i].OnPlayerExit ();
+			}
+			if (edges [i].other != null) {
+				edges [i].other.GetEdge (edges [i].direction.GetOpposite ()).OnPlayerExit ();
+			}
+		}
+	}
 
 	public bool IsInit {
 		get {

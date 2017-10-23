@@ -6,7 +6,7 @@ public abstract class scr_edge : MonoBehaviour {
 
 	public Direction direction;
 
-	public void Initialize (scr_node cell, scr_node other, Direction direction) {
+	public virtual void Initialize (scr_node cell, scr_node other, Direction direction) {
 		this.cell = cell;
 		this.other = other;
 		this.direction = direction;
@@ -15,4 +15,8 @@ public abstract class scr_edge : MonoBehaviour {
 		transform.localPosition = Vector3.zero;
 		transform.localRotation = direction.ToRotation ();
 	}
+
+	public virtual void OnPlayerEnter () {}
+
+	public virtual void OnPlayerExit () {}
 }

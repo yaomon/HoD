@@ -80,4 +80,5 @@ MonoBehaviour:
   pre_broke: {fileID: 114792804716042638, guid: 7ee9b0b3ee624a748a6ff5f4c922ce3b,
     type: 2}
   pre_roof: {fileID: 114604738207381696, guid: 9387a481436821243be8dbee7839e599, type: 2}
+  pre_chest: {fileID: 1761314537602266, guid: fa06308d4cc98d84c81fd7fd3d27631e, type: 2}
   db_prob: 0.259

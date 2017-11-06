@@ -108,6 +108,48 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &286266174
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4937327986804838, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e7135837b7c2991499f3a6b79c94ee45, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1373999540
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,8 +217,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.04411763, g: 0.03892732, b: 0.043115363, a: 1}
-  m_Intensity: 0.35
+  m_Color: {r: 0.102941155, g: 0.09234427, b: 0.10089485, a: 1}
+  m_Intensity: 0.355
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -254,7 +296,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.032763828, g: 0.039889317, b: 0.04411763, a: 1}
+  m_Color: {r: 0.07720587, g: 0.09335697, b: 0.102941155, a: 1}
   m_Intensity: 0.25
   m_Range: 10
   m_SpotAngle: 30

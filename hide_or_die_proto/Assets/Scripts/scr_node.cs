@@ -2,8 +2,11 @@
 
 public class scr_node : MonoBehaviour {
 	public IntVector2 coordinates;
-	private scr_edge[] edges = new scr_edge[Directions.count];
+	public scr_edge[] edges = new scr_edge[Directions.count];
 	private int initializedEdgecount;
+	private bool dot = true;
+	private bool pl_on = false;
+	private int dot_count = 0;
 	public scr_room room;
 	public scr_roof roof;
 
@@ -21,6 +24,7 @@ public class scr_node : MonoBehaviour {
 				edges [i].other.GetEdge (edges [i].direction.GetOpposite ()).OnPlayerEnter ();
 			}
 		}
+		pl_on = true;
 	}
 
 	public void OnPlayerExit () {
@@ -32,6 +36,7 @@ public class scr_node : MonoBehaviour {
 				edges [i].other.GetEdge (edges [i].direction.GetOpposite ()).OnPlayerExit ();
 			}
 		}
+		pl_on = false;
 	}
 
 	public bool IsInit {
@@ -62,5 +67,22 @@ public class scr_node : MonoBehaviour {
 	public void SetEdge (Direction direction, scr_edge edge) {
 		edges[(int)direction] = edge;
 		initializedEdgecount += 1;
+	}
+		
+	public void GenerateDeadEnd(GameObject obj) {
+		int wall_count = 0;
+		int dir = 0;
+		for (int i = 0; i < 4; i++) {
+			if ((edges [i]) is scr_wall) {
+				wall_count++;
+			} else {
+				dir = i;
+			}
+		}
+		if (wall_count == 3) {
+			GameObject new_obj = Instantiate (obj);
+			new_obj.transform.position = transform.position;
+			new_obj.transform.rotation = edges [dir].direction.ToRotation();
+		}
 	}
 }

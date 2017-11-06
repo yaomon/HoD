@@ -13,6 +13,8 @@ public class scr_maze : MonoBehaviour {
 	public scr_door pre_door;
 	public scr_broken pre_broke;
 	public scr_roof pre_roof;
+	public GameObject pre_chest;
+
 	[Range(0f, 1f)]
 	public float db_prob;
 
@@ -158,6 +160,14 @@ public class scr_maze : MonoBehaviour {
 		if (other != null) {
 			wall = Instantiate(pre_wall[Random.Range(0, pre_wall.Length)]) as scr_wall;
 			wall.Initialize(other, cell, direction.GetOpposite());
+		}
+	}
+
+	public void GenerateChests() {
+		for (int i = 0; i < maze_arr.GetLength(0); i++) {
+			for (int j = 0; j < maze_arr.GetLength(1); j++) {
+				maze_arr [i, j].GenerateDeadEnd(pre_chest);
+			}
 		}
 	}
 }

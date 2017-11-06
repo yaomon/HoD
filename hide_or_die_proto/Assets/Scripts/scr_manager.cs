@@ -14,6 +14,7 @@ public class scr_manager : MonoBehaviour {
 	private void StartGame () {
 		maze_inst = Instantiate (maze_prefab) as scr_maze;
 		maze_inst.Generate ();
+		maze_inst.GenerateChests ();
 	}
 
 	private void RestartGame () {
